@@ -1,0 +1,91 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "lngrd",
+  "scopeName": "source.lngrd",
+  "patterns": [
+    {
+      "name": "comment.line.lngrd",
+      "match": "#.*"
+    },
+    {
+      "name": "keyword.control.lngrd",
+      "match": "(if|while|catch|throw|argument)"
+    },
+    {
+      "name": "constant.numeric.lngrd",
+      "match": "[-+]?[0-9]+"
+    },
+    {
+      "name": "string.quoted.double.lngrd",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.lngrd",
+          "match": "\\\\(x[0-9a-f]{2}|[tnr\\\\\"]{1})"
+        },
+        {
+          "name": "invalid.illegal.character.escape.lngrd",
+          "match": "\\\\.{1}"
+        }
+      ]
+    },
+    {
+      "name": "variable.other.lookup.short.lngrd",
+      "match": "[$@]{1}[0-9a-zA-Z]+"
+    },
+    {
+      "name": "variable.other.assign.short.lngrd",
+      "match": "\\|[$@]{1}[0-9a-zA-Z]+"
+    },
+    {
+      "name": "variable.other.unassign.short.lngrd",
+      "match": "%[$@]{1}[0-9a-zA-Z]+"
+    },
+    {
+      "name": "variable.other.lookup.long.lngrd",
+      "begin": "[$@]{1}\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.lngrd",
+          "match": "\\\\(x[0-9a-f]{2}|[tnr\\\\\"]{1})"
+        },
+        {
+          "name": "invalid.illegal.character.escape.lngrd",
+          "match": "\\\\.{1}"
+        }
+      ]
+    },
+    {
+      "name": "variable.other.assign.long.lngrd",
+      "begin": "\\|[$@]{1}\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.lngrd",
+          "match": "\\\\(x[0-9a-f]{2}|[tnr\\\\\"]{1})"
+        },
+        {
+          "name": "invalid.illegal.character.escape.lngrd",
+          "match": "\\\\.{1}"
+        }
+      ]
+    },
+    {
+      "name": "variable.other.unassign.long.lngrd",
+      "begin": "%[$@]{1}\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.lngrd",
+          "match": "\\\\(x[0-9a-f]{2}|[tnr\\\\\"]{1})"
+        },
+        {
+          "name": "invalid.illegal.character.escape.lngrd",
+          "match": "\\\\.{1}"
+        }
+      ]
+    }
+  ]
+}

@@ -3,12 +3,45 @@
   "private": true,
   "version": "0.1.0",
   "description": "Language services for lngrd.",
-  "scripts": {},
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
   "repository": {
     "type": "git",
     "url": "https://git.sr.ht/~wareification/lngrdvsc.git"
   },
   "author": "wareification",
   "license": "Unlicense",
-  "homepage": "https://git.sr.ht/~wareification/lngrdvsc#readme"
+  "homepage": "https://git.sr.ht/~wareification/lngrdvsc#readme",
+  "engines": {
+    "vscode": "^1.83.1"
+  },
+  "publisher": "wareification",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "lngrd",
+        "configuration": "./syntaxes/language-configuration.json",
+        "firstLine": "#.*lngrd.*",
+        "extensions": [
+          ".lngrd"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "lngrd",
+        "scopeName": "source.lngrd",
+        "path": "./syntaxes/lngrd.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^18.18.9",
+    "@types/vscode": "^1.83.1",
+    "typescript": "^5.2.2"
+  }
 }
