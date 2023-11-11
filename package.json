@@ -1,0 +1,14 @@
+{
+  "name": "lngrdvsc",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Language services for lngrd.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://git.sr.ht/~wareification/lngrdvsc.git"
+  },
+  "author": "wareification",
+  "license": "Unlicense",
+  "homepage": "https://git.sr.ht/~wareification/lngrdvsc#readme"
+}
