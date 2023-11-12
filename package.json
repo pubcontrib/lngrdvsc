@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "description": "Language services for lngrd.",
   "scripts": {
-    "compile": "tsc -p ./"
+    "compile": "tsc -p ./",
+    "package": "npm run compile && vsce package --skip-license"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
   "devDependencies": {
     "@types/node": "^18.18.9",
     "@types/vscode": "^1.83.1",
+    "@vscode/vsce": "^2.22.0",
     "typescript": "^5.2.2"
   }
 }
