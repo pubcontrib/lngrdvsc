@@ -36,7 +36,12 @@
       {
         "language": "lngrd",
         "scopeName": "source.lngrd",
-        "path": "./syntaxes/lngrd.tmLanguage.json"
+        "path": "./syntaxes/lngrd.tmLanguage.json",
+        "unbalancedBracketScopes": [
+          "variable.other.lookup.long.lngrd",
+          "variable.other.assign.long.lngrd",
+          "variable.other.unassign.long.lngrd"
+        ]
       }
     ]
   },
