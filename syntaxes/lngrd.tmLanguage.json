@@ -9,7 +9,7 @@
     },
     {
       "name": "keyword.control.lngrd",
-      "match": "(if|while|catch|throw|argument)"
+      "match": "(if|else|while|catch|throw|argument)"
     },
     {
       "name": "constant.numeric.lngrd",
