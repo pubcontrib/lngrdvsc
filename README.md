@@ -7,6 +7,7 @@
 - Syntax highlighting
 - Colorized bracket pairs
 - `Toggle line comment` action
+- Color customization defaults for lngrd-only TextMate tokens
 
 ## Setup
 

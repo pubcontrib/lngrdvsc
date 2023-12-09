@@ -43,7 +43,27 @@
           "variable.other.unassign.long.lngrd"
         ]
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+        "[*]": {
+          "textMateRules": [
+            {
+              "scope": "variable.other.assign",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "variable.other.unassign",
+              "settings": {
+                "fontStyle": "strikethrough"
+              }
+            }
+          ]
+        }
+      }
+    }
   },
   "devDependencies": {
     "@types/node": "^18.18.9",
