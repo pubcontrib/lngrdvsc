@@ -30,7 +30,11 @@
         "firstLine": "#.*lngrd.*",
         "extensions": [
           ".lngrd"
-        ]
+        ],
+        "icon": {
+          "dark": "images/language-icon.png",
+          "light": "images/language-icon.png"
+        }
       }
     ],
     "grammars": [
