@@ -1,7 +1,7 @@
 {
   "name": "lngrdvsc",
   "private": true,
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Language services for lngrd.",
   "icon": "images/project-icon.png",
   "scripts": {
