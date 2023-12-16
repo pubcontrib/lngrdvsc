@@ -50,6 +50,14 @@
       }
     ],
     "configurationDefaults": {
+      "[lngrd]": {
+        "editor.language.colorizedBracketPairs": [
+          ["(", ")"],
+          ["\\", "/"],
+          ["[", "]"],
+          ["<", ">"]
+        ]
+      },
       "editor.tokenColorCustomizations": {
         "[*]": {
           "textMateRules": [
