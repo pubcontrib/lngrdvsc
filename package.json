@@ -1,7 +1,7 @@
 {
   "name": "lngrdvsc",
   "private": true,
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Language services for lngrd.",
   "icon": "images/project-icon.png",
   "scripts": {
@@ -52,10 +52,22 @@
     "configurationDefaults": {
       "[lngrd]": {
         "editor.language.colorizedBracketPairs": [
-          ["(", ")"],
-          ["\\", "/"],
-          ["[", "]"],
-          ["<", ">"]
+          [
+            "(",
+            ")"
+          ],
+          [
+            "\\",
+            "/"
+          ],
+          [
+            "[",
+            "]"
+          ],
+          [
+            "<",
+            ">"
+          ]
         ]
       },
       "editor.tokenColorCustomizations": {
