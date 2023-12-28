@@ -6,7 +6,8 @@
   "icon": "images/project-icon.png",
   "scripts": {
     "compile": "tsc -p ./",
-    "package": "npm run compile && vsce package --skip-license"
+    "package": "npm run compile && vsce package --skip-license --out lngrdvsc.vsix",
+    "extend": "npm install && npm run package && code --install-extension lngrdvsc.vsix && rm lngrdvsc.vsix"
   },
   "repository": {
     "type": "git",
